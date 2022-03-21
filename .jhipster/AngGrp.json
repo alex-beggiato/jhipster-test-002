@@ -1,0 +1,39 @@
+{
+  "applications": "*",
+  "changelogDate": "20220321085007",
+  "clientRootFolder": "jhipsterTest002",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "ang_grp",
+  "fields": [
+    {
+      "fieldName": "uid",
+      "fieldType": "UUID"
+    },
+    {
+      "fieldName": "grpCod",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "grpDsc",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "jhipsterTest002",
+  "name": "AngGrp",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "angRes",
+      "otherEntityRelationshipName": "uid",
+      "ownerSide": false,
+      "relationshipName": "uid",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "no"
+}
