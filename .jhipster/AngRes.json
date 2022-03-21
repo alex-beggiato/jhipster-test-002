@@ -1,0 +1,55 @@
+{
+  "applications": "*",
+  "changelogDate": "20220321085006",
+  "clientRootFolder": "jhipsterTest002",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "ang_res",
+  "fields": [
+    {
+      "fieldName": "uid",
+      "fieldType": "UUID"
+    },
+    {
+      "fieldName": "resCod",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "resDsc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bdgUid",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "resTyp",
+      "fieldType": "AngResTyp",
+      "fieldValues": "H,M,S"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "jhipsterTest002",
+  "name": "AngRes",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "angBdg",
+      "otherEntityRelationshipName": "angRes",
+      "ownerSide": true,
+      "relationshipName": "bdgUid",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "angGrp",
+      "otherEntityRelationshipName": "uid",
+      "ownerSide": true,
+      "relationshipName": "uid",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "no"
+}

@@ -84,6 +84,11 @@ public class CacheConfiguration {
             createCache(cm, org.test.domain.User.class.getName(), jcacheConfiguration);
             createCache(cm, org.test.domain.Authority.class.getName(), jcacheConfiguration);
             createCache(cm, org.test.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            createCache(cm, org.test.domain.AngBdg.class.getName(), jcacheConfiguration);
+            createCache(cm, org.test.domain.AngRes.class.getName(), jcacheConfiguration);
+            createCache(cm, org.test.domain.AngRes.class.getName() + ".uids", jcacheConfiguration);
+            createCache(cm, org.test.domain.AngGrp.class.getName(), jcacheConfiguration);
+            createCache(cm, org.test.domain.AngGrp.class.getName() + ".uids", jcacheConfiguration);
             // jhipster-needle-redis-add-entry
         };
     }
